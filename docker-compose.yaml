@@ -1,0 +1,8 @@
+services:
+  web: 
+    build: 
+      context: .
+      tags:
+        - "ghcr.io/vilardelle/docker_test:go_server"
+    ports:
+      - "8080:8080"
